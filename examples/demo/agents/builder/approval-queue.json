@@ -1,0 +1,8 @@
+{
+  "pending": [],
+  "resolved": [
+    {"id": "appr-002", "title": "Repeated near-identical shell commands",
+     "context": "Ran 6 similar commands in 5 minutes while debugging the sync job.",
+     "class": "loop-guard", "note": "Declined: step back and read the error first."}
+  ]
+}

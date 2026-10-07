@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arcturion-flywheel"
+version = "0.1.0"
+description = "Turn agent corrections, approvals and decisions into deduplicated eval cases and an SFT corpus"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Arcturion Technologies"}]
+
+[project.scripts]
+arcturion-flywheel = "arcturion_flywheel.cli:main"
+
+[tool.setuptools]
+packages = ["arcturion_flywheel"]

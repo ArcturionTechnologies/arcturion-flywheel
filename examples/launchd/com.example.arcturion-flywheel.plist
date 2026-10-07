@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Template: run the flywheel once a day at 04:15 on macOS.
+     Replace every /path/to/... placeholder, then:
+       cp com.example.arcturion-flywheel.plist ~/Library/LaunchAgents/
+       launchctl bootstrap gui/$UID ~/Library/LaunchAgents/com.example.arcturion-flywheel.plist
+     To change it later: bootout, edit, bootstrap. Don't edit a loaded plist in place. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.example.arcturion-flywheel</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>-m</string>
+    <string>arcturion_flywheel</string>
+    <string>--agents-root</string><string>/path/to/agents</string>
+    <string>--ledger</string><string>/path/to/approvals-ledger.ndjson</string>
+    <string>--out</string><string>/path/to/flywheel-out</string>
+  </array>
+  <key>WorkingDirectory</key><string>/path/to/arcturion-flywheel</string>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>4</integer><key>Minute</key><integer>15</integer></dict>
+  <key>RunAtLoad</key><false/>
+  <key>StandardOutPath</key><string>/path/to/logs/arcturion-flywheel.out</string>
+  <key>StandardErrorPath</key><string>/path/to/logs/arcturion-flywheel.err</string>
+</dict></plist>

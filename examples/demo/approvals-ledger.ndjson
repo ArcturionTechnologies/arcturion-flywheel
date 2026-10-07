@@ -1,0 +1,6 @@
+{"ts": "2026-03-04T10:00:00Z", "event": "submitted", "agent": "builder", "id": "appr-001", "gate_class": "outbound-send", "title": "Email the weekly status report to an external list"}
+{"ts": "2026-03-04T10:05:00Z", "event": "resolved", "agent": "builder", "id": "appr-001", "decision": "deny", "decided_by": "operator"}
+{"ts": "2026-03-07T15:00:00Z", "event": "resolved", "agent": "builder", "id": "appr-002", "decision": "deny", "decided_by": "operator"}
+{"ts": "2026-03-08T09:00:00Z", "event": "submitted", "agent": "researcher", "id": "appr-003", "gate_class": "paid-api", "title": "Run one paid deep-search query"}
+{"ts": "2026-03-08T09:02:00Z", "event": "resolved", "agent": "researcher", "id": "appr-003", "decision": "approve", "decided_by": "operator"}
+{"ts": "2026-03-09T00:00:00Z", "event": "sweep", "summary": {}}
